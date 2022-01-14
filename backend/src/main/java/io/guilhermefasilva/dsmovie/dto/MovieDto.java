@@ -6,8 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class MovieDto {
 
     private Long id;
@@ -15,6 +14,8 @@ public class MovieDto {
     private Double score;
     private Integer count;
     private String image;
+
+    public MovieDto(){}
 
     public MovieDto(Movie movie){
         this.id = movie.getId();
